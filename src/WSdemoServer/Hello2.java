@@ -34,8 +34,9 @@ public class Hello2 {
 	@Path("/get_something")
 	@Produces("application/json")
 	public String getSomething() {
+		// http://localhost:8765/WSdemoServer/hello2/get_something
 		System.out.println("hey something");
-		return "heyyy";
+		return "{\"heyyy\": \"kid\"}";
 	}
 	
 	
